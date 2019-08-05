@@ -13,6 +13,7 @@
 		73119BA422F89CC800F41981 /* CountdownApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73119BA222F89CC800F41981 /* CountdownApp.xcdatamodeld */; };
 		73119BA622F89CC800F41981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73119BA522F89CC800F41981 /* Assets.xcassets */; };
 		73119BA922F89CC800F41981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73119BA722F89CC800F41981 /* LaunchScreen.storyboard */; };
+		73119BB122F89F3100F41981 /* AddCountdownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		73119BA522F89CC800F41981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73119BA822F89CC800F41981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73119BAA22F89CC800F41981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountdownTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				73119BA722F89CC800F41981 /* LaunchScreen.storyboard */,
 				73119BAA22F89CC800F41981 /* Info.plist */,
 				73119BA222F89CC800F41981 /* CountdownApp.xcdatamodeld */,
+				73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */,
 			);
 			path = CountdownApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73119B9E22F89CC800F41981 /* ViewController.swift in Sources */,
+				73119BB122F89F3100F41981 /* AddCountdownTableViewController.swift in Sources */,
 				73119B9C22F89CC800F41981 /* AppDelegate.swift in Sources */,
 				73119BA422F89CC800F41981 /* CountdownApp.xcdatamodeld in Sources */,
 			);
