@@ -40,7 +40,7 @@ class CountdownViewController: UIViewController, UITableViewDataSource, UITableV
         let cell = tableView.dequeueReusableCell(withIdentifier: "DatesCell", for: indexPath) as! CountdownTableViewCell
         let countdownDate = countdownDates[indexPath.row]
         cell.updateUI(with: countdownDate)
-        cell.showsReorderControl = true
+       cell.showsReorderControl = true
         return cell
     }
     
@@ -51,12 +51,12 @@ class CountdownViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.setEditing(!tableViewEditingMode, animated: true)
     }
     
+    
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
         if editingStyle == .delete {
             countdownDates.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
