@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		73119B9C22F89CC800F41981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119B9B22F89CC800F41981 /* AppDelegate.swift */; };
-		73119B9E22F89CC800F41981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119B9D22F89CC800F41981 /* ViewController.swift */; };
+		73119B9E22F89CC800F41981 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119B9D22F89CC800F41981 /* CountdownViewController.swift */; };
 		73119BA122F89CC800F41981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73119B9F22F89CC800F41981 /* Main.storyboard */; };
-		73119BA422F89CC800F41981 /* CountdownApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73119BA222F89CC800F41981 /* CountdownApp.xcdatamodeld */; };
 		73119BA622F89CC800F41981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73119BA522F89CC800F41981 /* Assets.xcassets */; };
 		73119BA922F89CC800F41981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73119BA722F89CC800F41981 /* LaunchScreen.storyboard */; };
 		73119BB122F89F3100F41981 /* AddCountdownTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */; };
+		73119BB622FDE0A500F41981 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73119BB522FDE0A500F41981 /* Countdown.swift */; };
+		73162D4C23009E7800DF5972 /* CountdownTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73162D4B23009E7800DF5972 /* CountdownTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73119B9822F89CC800F41981 /* CountdownApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountdownApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73119B9B22F89CC800F41981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73119B9D22F89CC800F41981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73119B9D22F89CC800F41981 /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		73119BA022F89CC800F41981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73119BA322F89CC800F41981 /* CountdownApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CountdownApp.xcdatamodel; sourceTree = "<group>"; };
 		73119BA522F89CC800F41981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73119BA822F89CC800F41981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73119BAA22F89CC800F41981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCountdownTableViewController.swift; sourceTree = "<group>"; };
+		73119BB522FDE0A500F41981 /* Countdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
+		73162D4B23009E7800DF5972 /* CountdownTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,13 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				73119B9B22F89CC800F41981 /* AppDelegate.swift */,
-				73119B9D22F89CC800F41981 /* ViewController.swift */,
+				73119B9D22F89CC800F41981 /* CountdownViewController.swift */,
 				73119B9F22F89CC800F41981 /* Main.storyboard */,
 				73119BA522F89CC800F41981 /* Assets.xcassets */,
 				73119BA722F89CC800F41981 /* LaunchScreen.storyboard */,
 				73119BAA22F89CC800F41981 /* Info.plist */,
-				73119BA222F89CC800F41981 /* CountdownApp.xcdatamodeld */,
 				73119BB022F89F3100F41981 /* AddCountdownTableViewController.swift */,
+				73119BB522FDE0A500F41981 /* Countdown.swift */,
+				73162D4B23009E7800DF5972 /* CountdownTableViewCell.swift */,
 			);
 			path = CountdownApp;
 			sourceTree = "<group>";
@@ -141,10 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73119B9E22F89CC800F41981 /* ViewController.swift in Sources */,
+				73119B9E22F89CC800F41981 /* CountdownViewController.swift in Sources */,
 				73119BB122F89F3100F41981 /* AddCountdownTableViewController.swift in Sources */,
 				73119B9C22F89CC800F41981 /* AppDelegate.swift in Sources */,
-				73119BA422F89CC800F41981 /* CountdownApp.xcdatamodeld in Sources */,
+				73162D4C23009E7800DF5972 /* CountdownTableViewCell.swift in Sources */,
+				73119BB622FDE0A500F41981 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,19 +346,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		73119BA222F89CC800F41981 /* CountdownApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				73119BA322F89CC800F41981 /* CountdownApp.xcdatamodel */,
-			);
-			currentVersion = 73119BA322F89CC800F41981 /* CountdownApp.xcdatamodel */;
-			path = CountdownApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 73119B9022F89CC800F41981 /* Project object */;
 }
