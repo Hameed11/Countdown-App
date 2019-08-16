@@ -10,60 +10,40 @@ import UIKit
 
 class CountdownViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    
-    var monthsCalender = ["jan", "Feb", "Mar"]
  
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-//        countdownDates = CountdownDate.loadDates(); //from the file we saved emojies in it
-//        
-//        if countdownDates.isEmpty {
-//            print("viewDidLoad calls Emoji.loadSampleEmojis()")
-//            countdownDates = CountdownDate.loadSampleDates()
-//        }
-//
-//        if let savedDate = CountdownDate.loadDates() {
-//            countdownDates = savedDate
-//        }
 
-       
         
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         if let savedDate = CountdownDate.loadDates() {
             countdownDates = savedDate
         }
-
+        
         tableView.reloadData()
     }
-
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return countdownDates.count
-        //return monthsCalender.count
+        return countdownDates.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "DatesCell", for: indexPath) as! CountdownTableViewCell
-
         let countdownDate = countdownDates[indexPath.row]
         cell.updateUI(with: countdownDate)
-        
-       cell.showsReorderControl = true
-        
-        
+        cell.showsReorderControl = true
         return cell
     }
+    
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         
