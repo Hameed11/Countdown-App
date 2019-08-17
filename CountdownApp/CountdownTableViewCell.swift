@@ -9,6 +9,7 @@
 import UIKit
 
 class CountdownTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var countdownLabel: UILabel!
     

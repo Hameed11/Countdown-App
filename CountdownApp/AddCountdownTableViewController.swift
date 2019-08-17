@@ -32,6 +32,11 @@ class AddCountdownTableViewController: UITableViewController {
         currentDateString()
         titleTextFieldLayout()
         
+       // endingDate.backgroundColor = UIColor.blue
+        endingDate.setValue(UIColor.orange, forKey: "textColor")
+        endingDate.setValue(0.8, forKey: "alpha")
+    
+        
     }
     
     
@@ -93,7 +98,8 @@ class AddCountdownTableViewController: UITableViewController {
         
         let placeholderAttr = NSAttributedString(string: "Countdown Title", attributes: [NSAttributedString.Key.foregroundColor : UIColor(displayP3Red: 170/255, green: 170/255, blue: 170/255, alpha: 1)])
         titleTextField.attributedPlaceholder = placeholderAttr
-        titleTextField.textColor = UIColor(displayP3Red: 99/255, green: 99/255, blue: 99/255, alpha: 1)
+        //titleTextField.textColor = UIColor(displayP3Red: 99/255, green: 99/255, blue: 99/255, alpha: 1)
+        titleTextField.textColor = UIColor.orange
     }
     
     

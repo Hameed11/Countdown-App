@@ -16,6 +16,9 @@ class CountdownViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        tableView.rowHeight = UITableView.automaticDimension;
+        tableView.estimatedRowHeight = 256
 
         
     }
@@ -49,6 +52,11 @@ class CountdownViewController: UIViewController, UITableViewDataSource, UITableV
         
         let tableViewEditingMode = tableView.isEditing
         tableView.setEditing(!tableViewEditingMode, animated: true)
+        
+        //Toggle the bar button between the words Edit and Done.
+        let systemItem: UIBarButtonItem.SystemItem = tableView.isEditing ? .done : .edit
+        let barButtonItem: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: systemItem, target: self, action: #selector(editButtonTapped(_:)));
+        navigationItem.leftBarButtonItem = barButtonItem
     }
     
     
