@@ -58,6 +58,11 @@ class CountdownTableViewCell: UITableViewCell {
         if endTime! < currentTime {
             timer.invalidate()
             countdownLabel.text = "Countdown is over"
+            daysLabel.text = "0"
+            hoursLabel.text = "0"
+            minutesLabel.text = "0"
+            secondsLabel.text = "0"
+            return
         }
         
         
